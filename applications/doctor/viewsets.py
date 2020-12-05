@@ -43,7 +43,7 @@ class DoctorViewSet(viewsets.ModelViewSet):
         serializer.save(
             full_name=nombre + ' ' + apellido
         )
-    
+
     def perform_create(self, serializer):
         nombre = self.request.data['nombre']
         apellido = self.request.data['apellido']
